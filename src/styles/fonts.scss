@@ -1,0 +1,23 @@
+@font-face {
+  src: local("MyriadPro-Regular"),
+  url("../fonts/MyriadPro/MyriadPro-Regular.woff2") format("woff2"),
+  url("../fonts/MyriadPro/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/MyriadPro/MyriadPro-Regular.ttf") format("truetype"),
+  url("../fonts/MyriadPro/MyriadPro-Regular.woff") format("woff");
+  font-family: "MyriadPro";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src: local("MyriadPro-LightSfemiExt"),
+  url("../fonts/MyriadPro/MyriadPro-LightSemiExt.woff2") format("woff2"),
+  url("../fonts/MyriadPro/MyriadPro-LightSemiExt.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/MyriadPro/MyriadPro-LightSemiExt.ttf") format("truetype"),
+  url("../fonts/MyriadPro/MyriadPro-LightSemiExt.woff") format("woff");
+  font-family: "MyriadProExt-LightSemiExt";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
