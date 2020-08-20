@@ -1,0 +1,37 @@
+.header-categories {
+  background-color: #ffffff;
+  .categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    box-shadow: 7px 7px 18px rgba(0, 0, 0, 0.1);
+
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__item {
+      font-size: 16px;
+      color: #343434;
+      font-family: 'MyriadPro', serif;
+    }
+
+    &__item-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__image {
+      width: 57px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

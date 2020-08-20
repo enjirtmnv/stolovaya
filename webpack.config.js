@@ -2,7 +2,6 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWepackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
-const autoprefixer = require('autoprefixer');
 
 
 module.exports = {
@@ -21,8 +20,7 @@ module.exports = {
         template: "./src/index.html",
         filename: "./index.html"
         }),
-        new CleanWebpackPlugin(),
-        require('autoprefixer')
+        new CleanWebpackPlugin()
     ],
     module: {
         rules: [
@@ -37,8 +35,21 @@ module.exports = {
                 }
             },
             {
-                test: /\.scss$/,
-                use: [ 'style-loader', 'css-loader', "postcss-loader" , 'sass-loader' ]
+                test: /\.(scss|css)$/,
+                // use: [ 'style-loader', 'css-loader', "postcss-loader" , 'sass-loader' ]
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    {
+                        loader: "postcss-loader",
+                        options: {
+                            plugins: () => [
+                                require("autoprefixer")()
+                            ],
+                        },
+                    },
+                    'sass-loader',
+                ]
             },
             {
                 test: /\.html$/,

@@ -9,7 +9,7 @@
 </head>
 <body>
 <header class="header">
-    <div class="header__nav">
+    <div class="header-nav">
         <div class="container">
             <nav class="nav">
                 <ul class="nav__list">
@@ -39,38 +39,41 @@
         </div>
     </div>
 
-    <div class="header__search">
+    <div class="header-search">
         <div class="container">
             <div class="search">
                 <a class="search__logo" href="#"><img src="./img/icons/logo-header.png" alt="logo"></a>
-                <form class="search__form" action="" method="get" type="search">
-                    <div class="search__categories">
-                        <div class="search__categories-text">Все</div>
+                <form class="search-form" action="" method="get" type="search-form">
+                    <div class="search-form__categories">
+                        <a href="">
+                            <div class="search-form__categories-click">Все</div>
+                        </a>
                     </div>
-                    <div class="search__area">
+                    <div class="search-form__area">
                         <input type="text">
                     </div>
-                    <div class="search__button">
+                    <div class="search-form__button">
                         <button type="submit">
                             <img src="./img/icons/search-icon.png" alt="search-icon">
                         </button>
                     </div>
                 </form>
 
-                <a href="#" class="search__provider">
-                    <img src="./img/icons/portal-provider.png" alt="portal-provider">
-                    <div class="search__provider-text">Мы на портале поставщиков</div>
-                </a>
-                <a href="#" class="search__cart">
-                    <div class="search__cart-wrap">
-                        <span class="search__cart-count">12</span>
-                        <div class="search__icon-cart">
-                            <img src="./img/icons/shopping-cart.png" alt="shopping-cart">
-                        </div>
+                <div class="provider">
+                    <a href="#" class="provider__link">
+                        <div class="provider__img"></div>
+                        <span class="provider__text">Мы на портале поставщиков</span>
+                    </a>
+                </div>
+
+
+                <a href="#" class="search-cart">
+                    <div class="search-cart__left">
+                        <span class="search-cart__count">12</span>
                     </div>
-                    <div class="search__cart-sum">
-                        <span class="search__cart-text">Сумма</span>
-                        <span class="search__cart-cost">150000 руб.</span>
+                    <div class="search-cart__right">
+                        <span class="search-cart__text">Сумма</span>
+                        <span class="search-cart__cost">150 000 руб.</span>
                     </div>
                 </a>
 
@@ -78,9 +81,254 @@
         </div>
     </div>
 
-    <div class="header__categories">
+    <div class="header-categories">
+        <div class="categories">
+            <div class="container">
+                <div class="categories__wrapper">
+                    <div class="categories__item">
+                        <a class="categories__item-link" href="#">
+                            <div class="categories__image">
+                                <img src="./img/categories/categories-1.png" alt="thermal-icon">
+                            </div>
+                            <span class="categories__name">Тепловое</span>
+                        </a>
+                    </div>
+                    <div class="categories__item">
+                        <a class="categories__item-link" href="#">
+                            <div class="categories__image">
+                                <img src="./img/categories/categories-2.png" alt="refrigeration-icon">
+                            </div>
+                            <span class="categories__name">Холодильное</span>
+                        </a>
+                    </div>
+                    <div class="categories__item">
+                        <a class="categories__item-link" href="#">
+                            <div class="categories__image">
+                                <img src="./img/categories/categories-3.png" alt="electro-icon">
+                            </div>
+                            <span class="categories__name">Электромеханическое</span>
+                        </a>
+                    </div>
+                    <div class="categories__item">
+                        <a class="categories__item-link" href="#">
+                            <div class="categories__image">
+                                <img src="./img/categories/categories-4.png" alt="dishwasher-icon">
+                            </div>
+                            <span class="categories__name">Посудомоечное</span>
+                        </a>
+                    </div>
+                    <div class="categories__item">
+                        <a class="categories__item-link" href="#">
+                            <div class="categories__image">
+                                <img src="./img/categories/categories-5.png" alt="bakery-icon">
+                            </div>
+                            <span class="categories__name">Хлебопекарное</span>
+                        </a>
+                    </div>
+                    <div class="categories__item">
+                        <a class="categories__item-link" href="#">
+                            <div class="categories__image">
+                                <img src="./img/categories/categories-6.png" alt="lines-icon">
+                            </div>
+                            <span class="categories__name">Линии раздачи</span>
+                        </a>
+                    </div>
+                    <div class="categories__item">
+                        <a class="categories__item-link" href="#">
+                            <div class="categories__image">
+                                <img src="./img/categories/categories-7.png" alt="neutral-icon">
+                            </div>
+                            <span class="categories__name">Нейтральное</span>
+                        </a>
+                    </div>
+                    <div class="categories__item">
+                        <a class="categories__item-link" href="#">
+                            <div class="categories__image">
+                                <img src="./img/categories/categories-8.png" alt="fastfood-icon">
+                            </div>
+                            <span class="categories__name">Для фаст фуда</span>
+                        </a>
+                    </div>
+                    <div class="categories__item">
+                        <a class="categories__item-link" href="#">
+                            <div class="categories__image">
+                                <img src="./img/categories/categories-9.png" alt="hall-icon">
+                            </div>
+                            <span class="categories__name">Для залов</span>
+                        </a>
+                    </div>
+                    <div class="categories__item">
+                        <a class="categories__item-link" href="#">
+                            <div class="categories__image">
+                                <img src="./img/categories/categories-10.png" alt="support-icon">
+                            </div>
+                            <span class="categories__name">Вспомогательное</span>
+                        </a>
+                    </div>
+                    <div class="categories__item">
+                        <a class="categories__item-link" href="#">
+                            <div class="categories__image">
+                                <img src="./img/categories/categories-11.png" alt="shop-icon">
+                            </div>
+                            <span class="categories__name">Для магазинов</span>
+                        </a>
+                    </div>
+                </div>
 
+            </div>
+        </div>
     </div>
 </header>
+
+<main class="main">
+    <div class="main-offer">
+        <div class="container">
+            <div class="main-offer__wrap">
+                <div class="targeted-offers">
+                    <span class="targeted-offers__title">Целевые предложения</span>
+                    <nav class="targeted-offers__nav">
+                        <ul class="targeted-offers__list">
+                            <li class="targeted-offers__item">
+                                <a class="targeted-offers__link" href="#">
+                                    <span class="targeted-offers__name">Кафе, барам, ресторанам</span>
+                                    <span class="targeted-offers__arrow">></span>
+                                </a>
+                            </li>
+                            <li class="targeted-offers__item">
+                                <a class="targeted-offers__link" href="#">
+                                    <span class="targeted-offers__name">Дестким садам и школам</span>
+                                    <span class="targeted-offers__arrow">></span>
+                                </a>
+                            </li>
+                            <li class="targeted-offers__item">
+                                <a class="targeted-offers__link" href="#">
+                                    <span class="targeted-offers__name">Таблет-питание</span>
+                                    <span class="targeted-offers__arrow">></span>
+                                </a>
+                            </li>
+                            <li class="targeted-offers__item">
+                                <a class="targeted-offers__link" href="#">
+                                    <span class="targeted-offers__name">Для столовых</span>
+                                    <span class="targeted-offers__arrow">></span>
+                                </a>
+                            </li>
+                            <li class="targeted-offers__item">
+                                <a class="targeted-offers__link" href="#">
+                                    <span class="targeted-offers__name">Для пищеблоков</span>
+                                    <span class="targeted-offers__arrow">></span>
+                                </a>
+                            </li>
+                            <li class="targeted-offers__item">
+                                <a class="targeted-offers__link" href="#">
+                                    <span class="targeted-offers__name">Государственным заказкам</span>
+                                    <span class="targeted-offers__arrow">></span>
+                                </a>
+                            </li>
+                            <li class="targeted-offers__item">
+                                <a class="targeted-offers__link" href="#">
+                                    <span class="targeted-offers__name">Для магазинов</span>
+                                    <span class="targeted-offers__arrow">></span>
+                                </a>
+                            </li>
+                            <li class="targeted-offers__item">
+                                <a class="targeted-offers__link" href="#">
+                                    <span class="targeted-offers__name">Для войсковых частей</span>
+                                    <span class="targeted-offers__arrow">></span>
+                                </a>
+                            </li>
+                            <li class="targeted-offers__item">
+                                <a class="targeted-offers__link" href="#">
+                                    <span class="targeted-offers__name">Все предложения</span>
+                                    <span class="targeted-offers__arrow">></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="carousel">
+                    <div class="swiper-container">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="carousel__content">
+                                    <span class="carousel__name">Портфолио</span>
+                                    <span class="carousel__title">НИИ скорой помощи им.&#160Н.В. Склифосовского</span>
+                                    <span class="carousel__subtitle">Оборудование для пищеблоков</span>
+                                    <a class="carousel__link" href="">
+                                        <span class="carousel__text-more">Подробнее</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel__content">
+                                    <span class="carousel__name">Портфолио</span>
+                                    <span class="carousel__title">НИИ скорой помощи им.&#160Н.В. Склифосовского</span>
+                                    <span class="carousel__subtitle">Оборудование для пищеблоков</span>
+                                    <a class="carousel__link" href="">
+                                        <span class="carousel__text-more">Подробнее</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel__content">
+                                    <span class="carousel__name">Портфолио</span>
+                                    <span class="carousel__title">НИИ скорой помощи им.&#160Н.В. Склифосовского</span>
+                                    <span class="carousel__subtitle">Оборудование для пищеблоков</span>
+                                    <a class="carousel__link" href="">
+                                        <span class="carousel__text-more">Подробнее</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel__content">
+                                    <span class="carousel__name">Портфолио</span>
+                                    <span class="carousel__title">НИИ скорой помощи им.&#160Н.В. Склифосовского</span>
+                                    <span class="carousel__subtitle">Оборудование для пищеблоков</span>
+                                    <a class="carousel__link" href="">
+                                        <span class="carousel__text-more">Подробнее</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <aside class="sale">
+                    <div class="sale__wrap">
+                        <div class="sale__giftbox">
+                            <img src="./img/icons/giftbox.png" alt="giftbox">
+                        </div>
+                        <span class="sale__subtitle">Самые низкие цены</span>
+                        <span class="sale__title">Распродажа</span>
+                        <a class="sale__catalog-link" href="#">
+                            <span>Каталог распродаж</span>
+                            <span>></span></a>
+                    </div>
+                </aside>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main-brand">
+        <div class="container">
+            <div class="brand">
+                <div class="brand__wrap">
+                <ul class="brand__list">
+                    <li class="brand__item"><a href=""><img src="./img/brands/brand-1.png" alt="brand-logo"></a></li>
+                    <li class="brand__item"><a href=""><img src="./img/brands/brand-2.png" alt="brand-logo"></a></li>
+                    <li class="brand__item"><a href=""><img src="./img/brands/brand-3.png" alt="brand-logo"></a></li>
+                    <li class="brand__item"><a href=""><img src="./img/brands/brand-4.png" alt="brand-logo"></a></li>
+                    <li class="brand__item"><a href=""><img src="./img/brands/brand-5.png" alt="brand-logo"></a></li>
+                    <li class="brand__item"><a href="">Все бренды</a></li>
+                </ul>
+             </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
 </body>
 </html>

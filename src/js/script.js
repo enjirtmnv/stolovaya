@@ -5,6 +5,6 @@
 console.log(body);
 
     body.addEventListener('click', function () {
-        body.style.backgroundColor = 'yellow';
+        body.style.backgroundColor = '#FFEFEF';
     });
 // }
