@@ -28,7 +28,12 @@ ul, li {
 }
 
 .container {
-  width: 1550px;
+   width: 1547px;
+   margin: 0 auto;
+ }
+
+.container2 {
+  width: 1412px;
   margin: 0 auto;
 }
 
@@ -42,6 +47,7 @@ ul, li {
 
 @import "./fragments/main-offer";
 @import "./fragments/main-brand";
+@import "./fragments/main-news";
 
 
 

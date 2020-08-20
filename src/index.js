@@ -16,6 +16,7 @@ window.addEventListener('DOMContentLoaded', function() {
         autoplay: {
             delay: 3000,
         },
+        loop: true,
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
