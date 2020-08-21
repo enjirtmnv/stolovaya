@@ -1,0 +1,75 @@
+.main-info{
+  margin: 0 0 172px 0;
+  .info{
+    height: 608px;
+    &__wrap{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .suggestions{
+      width: 831px;
+      display: flex;
+      flex-direction: column;
+      &__title{
+        font-family: 'MyriadPro', serif;
+        color: #121212;
+        font-size: 40px;
+      }
+      &__par{
+        font-family: 'MyriadProExt-LightSemiExt', serif;
+        font-size: 18px;
+        color: #121212;
+      }
+      &__subtitle{
+        font-family: 'MyriadProExt-LightSemiExt', serif;
+        font-size: 40px;
+        color: #121212;
+      }
+      &__button-plus{
+        font-family: 'MyriadProExt-LightSemiExt', serif;
+        font-size: 24px;
+        color: #ffffff;
+        background-color: #000000;
+        width: 49px;
+        height: 49px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .company{
+      width: 262px;
+      display: flex;
+      flex-direction: column;
+      &__logo{
+        width: 151px;
+        height: 151px;
+      }
+      &__logo-name{
+        width: 211px;
+      }
+      &__logo-text{
+        font-family: 'MyriadProExt-LightSemiExt', serif;
+        font-size: 16px;
+        color: #777777;
+      }
+      &__title{
+        font-family: 'MyriadPro', serif;
+        font-size: 24px;
+        color: #171717;
+      }
+      &__subtitle{
+        font-family: 'MyriadProExt-LightSemiExt', serif;
+        font-size: 18px;
+        color: #777777;
+      }
+      &__par{
+        font-family: 'MyriadProExt-LightSemiExt', serif;
+        font-size: 18px;
+        color: #171717;
+      }
+    }
+  }
+}
