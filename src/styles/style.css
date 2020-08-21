@@ -928,4 +928,132 @@ ul, li {
   font-family: "MyriadProExt-LightSemiExt", serif;
 }
 
+.main-recommend {
+  margin: 0 0 171px 0;
+}
+.main-recommend .recommend {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-recommend .recommend__title {
+  font-family: "MyriadPro", serif;
+  color: #232323;
+  font-size: 40px;
+}
+.main-recommend .recommend__par {
+  font-family: "MyriadProExt-LightSemiExt", serif;
+  color: #787878;
+  font-size: 16px;
+  width: 685px;
+  margin: 28px 0 65px 0;
+  text-align: center;
+}
+.main-recommend .recommend__wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-recommend .recommend .recommend-main {
+  width: 43%;
+  margin: 0 12.3px 0 0;
+}
+.main-recommend .recommend .recommend-main__wrap {
+  height: 745px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/recommend/recommend-main.png");
+  background-repeat: no-repeat;
+  background-size: 68%;
+  background-position: center 270px;
+}
+.main-recommend .recommend .recommend-main__model {
+  font-family: "MyriadProExt-LightSemiExt", serif;
+  color: #121212;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 69px 0 0 0;
+}
+.main-recommend .recommend .recommend-main__title {
+  font-family: "MyriadPro", serif;
+  color: #121212;
+  font-size: 30px;
+  margin: 6px 0 19px 0;
+}
+.main-recommend .recommend .recommend-main__par {
+  font-family: "MyriadProExt-LightSemiExt", serif;
+  color: #777777;
+  font-size: 16px;
+  width: 284px;
+  text-align: center;
+}
+.main-recommend .recommend .recommend-side {
+  width: 56%;
+}
+.main-recommend .recommend .recommend-side .recommend-side-1__wrap {
+  height: 420px;
+  background-color: #232323;
+  margin: 0 0 9px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 247px;
+  background-image: url("../img/recommend/recommend-side-1.png");
+  background-repeat: no-repeat;
+  background-size: 44%;
+  background-position: -180px center;
+}
+.main-recommend .recommend .recommend-side .recommend-side-1__model {
+  font-family: "MyriadProExt-LightSemiExt", serif;
+  color: #ffffff;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.main-recommend .recommend .recommend-side .recommend-side-1__title {
+  font-family: "MyriadPro", serif;
+  color: #ffffff;
+  font-size: 30px;
+  margin: 6px 0 19px 0;
+}
+.main-recommend .recommend .recommend-side .recommend-side-1__par {
+  font-family: "MyriadProExt-LightSemiExt", serif;
+  color: #777777;
+  font-size: 16px;
+  width: 394px;
+}
+.main-recommend .recommend .recommend-side .recommend-side-2__wrap {
+  background-color: #ffffff;
+  height: 316px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 62.8px;
+  background-image: url("../img/recommend/recommend-side-2.png");
+  background-repeat: no-repeat;
+  background-size: 51%;
+  background-position: 475px 10px;
+}
+.main-recommend .recommend .recommend-side .recommend-side-2__model {
+  font-family: "MyriadProExt-LightSemiExt", serif;
+  color: #121212;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.main-recommend .recommend .recommend-side .recommend-side-2__title {
+  font-family: "MyriadPro", serif;
+  color: #121212;
+  font-size: 30px;
+  margin: 6px 0 19px 0;
+}
+.main-recommend .recommend .recommend-side .recommend-side-2__par {
+  font-family: "MyriadProExt-LightSemiExt", serif;
+  color: #777777;
+  font-size: 16px;
+  width: 395px;
+}
+
 /*# sourceMappingURL=style.css.map */
