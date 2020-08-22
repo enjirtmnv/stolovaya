@@ -1,10 +1,24 @@
 // function changeBodyColor(event){
 //     event.preventDefault();
 
-    let body = document.querySelector('body');
-console.log(body);
+let suggestionsButtonPlus = document.querySelector('.suggestions__button-plus');
+let suggestionsButtonMinus = document.querySelector('.suggestions__button-minus');
+let suggestionsMore = document.querySelector('.suggestions-more');
 
-    body.addEventListener('click', function () {
-        body.style.backgroundColor = '#FFEFEF';
-    });
-// }
+suggestionsButtonPlus.addEventListener('click', function () {
+
+        suggestionsMore.style.maxHeight = suggestionsMore.scrollHeight + "px";
+
+        suggestionsButtonPlus.style.display = 'none';
+        suggestionsButtonMinus.style.display = 'block';
+});
+
+suggestionsButtonMinus.addEventListener('click', function () {
+
+        suggestionsMore.style.maxHeight = null;
+
+        suggestionsButtonPlus.style.display = 'block';
+        suggestionsButtonMinus.style.display = 'none';
+});
+
+

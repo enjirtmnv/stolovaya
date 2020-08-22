@@ -9,6 +9,7 @@
       font-size: 40px;
       color: #121212;
       font-family: 'MyriadPro', serif;
+      display: block;
     }
     &__wrap{
       height: 587px;
@@ -49,7 +50,7 @@
         &__par{
           font-family: 'MyriadProExt-LightSemiExt', serif;
           font-size: 16px;
-          color: #121212
+          color: #121212;
         }
       }
       .news-side{

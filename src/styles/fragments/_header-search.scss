@@ -20,6 +20,7 @@
       display: flex;
       align-items: center;
 
+
       &__categories {
       }
 
@@ -37,6 +38,7 @@
         background-repeat: no-repeat;
         background-size: 12px auto;
         background-position: 47px center;
+        margin: 0 0 0 30px;
       }
 
       &__area {
@@ -110,6 +112,7 @@
         font-size: 14px;
         line-height: 1.14;
         font-family: 'MyriadProExt-LightSemiExt', serif;
+        display: block;
       }
     }
 
@@ -163,12 +166,14 @@
         color: #777777;
         font-size: 14px;
         font-family: 'MyriadPro', serif;
+        display: block;
       }
 
       &__cost {
         font-size: 16px;
         color: #1d1d1d;
         font-family: 'MyriadPro', serif;
+        display: block;
       }
     }
   }

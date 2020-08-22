@@ -11,6 +11,7 @@
       font-family: 'MyriadPro', serif;
       color: #232323;
       font-size: 40px;
+      display: block;
     }
 
     &__par {
@@ -18,7 +19,7 @@
       color: #787878;
       font-size: 16px;
       width: 685px;
-      margin: 28px 0 65px 0;
+      margin: 11px 0 57px 0;
       text-align: center;
     }
 
@@ -50,6 +51,7 @@
         font-size: 20px;
         text-transform: uppercase;
         margin: 69px 0 0 0;
+        display: block;
       }
 
       &__title {
@@ -57,6 +59,7 @@
         color: #121212;
         font-size: 30px;
         margin: 6px 0 19px 0;
+        display: block;
       }
 
       &__par {
@@ -90,6 +93,7 @@
           color: #ffffff;
           font-size: 20px;
           text-transform: uppercase;
+          display: block;
         }
 
         &__title {
@@ -97,6 +101,7 @@
           color: #ffffff;
           font-size: 30px;
           margin: 6px 0 19px 0;
+          display: block;
         }
 
         &__par {

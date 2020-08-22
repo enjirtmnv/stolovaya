@@ -1,20 +1,21 @@
 .main-info{
   margin: 0 0 172px 0;
   .info{
-    height: 608px;
     &__wrap{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
     }
     .suggestions{
-      width: 831px;
+      width: 57%;
       display: flex;
       flex-direction: column;
       &__title{
         font-family: 'MyriadPro', serif;
         color: #121212;
         font-size: 40px;
+        margin: 0 0 15px 0;
+        display: block;
       }
       &__par{
         font-family: 'MyriadProExt-LightSemiExt', serif;
@@ -25,6 +26,8 @@
         font-family: 'MyriadProExt-LightSemiExt', serif;
         font-size: 40px;
         color: #121212;
+        margin: 25px 0 15px 0;
+        display: block;
       }
       &__button-plus{
         font-family: 'MyriadProExt-LightSemiExt', serif;
@@ -34,41 +37,92 @@
         width: 49px;
         height: 49px;
         border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        margin: 43px 0 0 0;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        display: block;
+      }
+      &__button-minus{
+        font-family: 'MyriadProExt-LightSemiExt', serif;
+        font-size: 24px;
+        color: #ffffff;
+        background-color: #000000;
+        width: 49px;
+        height: 49px;
+        border-radius: 50%;
+        margin: 43px 0 0 0;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        display: none;
+      }
+      .suggestions-more{
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 500ms;
+        &__subtitle{
+          font-family: 'MyriadProExt-LightSemiExt', serif;
+          font-size: 40px;
+          color: #121212;
+          margin: 25px 0 15px 0;
+          display: block;
+        }
+        &__par{
+          font-family: 'MyriadProExt-LightSemiExt', serif;
+          font-size: 18px;
+          color: #121212;
+        }
       }
     }
     .company{
-      width: 262px;
+      width: 19%;
       display: flex;
       flex-direction: column;
+      margin: 0 47px 0 0;
       &__logo{
         width: 151px;
-        height: 151px;
       }
-      &__logo-name{
-        width: 211px;
+      .logo-name-wrap{
+        margin: 27px 0 0 0;
+      }
+      .logo-name1{
+        font-family: 'MyriadPro', serif;
+        color: #121212;
+        font-size: 40px;
+        text-transform: capitalize;
+      }
+      .logo-name2{
+        font-family: 'MyriadPro', serif;
+        color: #121212;
+        font-size: 40px;
+        text-transform: uppercase;
       }
       &__logo-text{
         font-family: 'MyriadProExt-LightSemiExt', serif;
         font-size: 16px;
         color: #777777;
+        margin: 0 0 30px 0;
+        display: block;
       }
       &__title{
         font-family: 'MyriadPro', serif;
         font-size: 24px;
         color: #171717;
+        display: block;
       }
       &__subtitle{
         font-family: 'MyriadProExt-LightSemiExt', serif;
         font-size: 18px;
         color: #777777;
+        margin: 0 0 20px 0;
+        display: block;
       }
       &__par{
         font-family: 'MyriadProExt-LightSemiExt', serif;
         font-size: 18px;
         color: #171717;
+        white-space: pre-line;
       }
     }
   }

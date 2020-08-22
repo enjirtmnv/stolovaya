@@ -2,5 +2,37 @@
   background-color: #282828;
   &__wrap{
     height: 482px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 93px 0 0 0;
+  }
+  &__item-wrap{
+    flex-basis: 14%;
+  }
+  &__info-name{
+    color: #777777;
+    font-family: 'MyriadProExt-LightSemiExt', serif;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0 0 20px 0;
+    display: block;
+  }
+  &__info-list{
+    color: #ffffff;
+    font-family: 'MyriadProExt-LightSemiExt', serif;
+    font-size: 16px;
+    line-height: 1.5
+  }
+  &__contacts ul{
+    li:nth-child(3){
+      margin-bottom: 15px;
+    }
+    li:nth-child(5){
+      margin-bottom: 15px;
+    }
+    li:nth-child(7){
+      margin-bottom: 15px;
+    }
   }
 }

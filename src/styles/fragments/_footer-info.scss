@@ -2,5 +2,49 @@
   background-color: #191919;
   &__wrap{
     height: 187px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__logo-wrap{
+    display: flex;
+    flex-direction: row;
+    padding: 46px 0 0 0;
+  }
+  &__logo{
+    width: 40px;
+    height: 40px;
+  }
+  &__logo-name{
+    height: 40px;
+    margin: 0 0 0 17px;
+  }
+  .logo-name-wrap{
+    display: block;
+  }
+  .logo-name1{
+    font-family: 'MyriadPro', serif;
+    color: #ffffff;
+    font-size: 24px;
+    text-transform: capitalize;
+  }
+  .logo-name2{
+    font-family: 'MyriadPro', serif;
+    color: #ffffff;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  &__logo-text{
+    font-family: 'MyriadProExt-LightSemiExt', serif;
+    font-size: 16px;
+    color: #787878;
+    line-height: 18px;
+    display: block;
+  }
+  &__text{
+    font-size: 18px;
+    font-family: 'MyriadProExt-LightSemiExt', serif;
+    color: #ffffff;
+    padding: 40px 0 0 0;
   }
 }
