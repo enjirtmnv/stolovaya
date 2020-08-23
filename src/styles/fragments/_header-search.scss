@@ -39,6 +39,7 @@
         background-size: 12px auto;
         background-position: 47px center;
         margin: 0 0 0 30px;
+        text-transform: capitalize;
       }
 
       &__area {
@@ -110,9 +111,9 @@
         margin: 0 0 0 5px;
         color: #777777;
         font-size: 14px;
-        line-height: 1.14;
         font-family: 'MyriadProExt-LightSemiExt', serif;
         display: block;
+
       }
     }
 

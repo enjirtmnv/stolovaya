@@ -83,6 +83,7 @@
           font-size: 16px;
           font-family: 'MyriadProExt-LightSemiExt', serif;
           color: #00aa4b;
+          text-transform: capitalize;
         }
         &__date{
           font-size: 16px;
@@ -98,6 +99,7 @@
         }
         &__par{
           font-family: 'MyriadProExt-LightSemiExt', serif;
+          font-weight: 300;
           font-size: 16px;
           color: #121212
         }
@@ -117,6 +119,7 @@
     &__text-all-news{
       font-size: 16px;
       font-family: 'MyriadProExt-LightSemiExt', serif;
+      font-weight: 300;
       color: #000000;
     }
   }

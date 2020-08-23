@@ -5,7 +5,6 @@
     justify-content: center;
     align-items: center;
     height: 100px;
-    box-shadow: 7px 7px 18px rgba(0, 0, 0, 0.1);
     &__wrapper {
       display: flex;
       flex-direction: row;
@@ -35,22 +34,3 @@
     }
   }
 }
-
-.catalog{
-  height: 612px;
-  display: none;
-  position: absolute;
-  z-index: 20;
-  background-color: #ffffff;
-  transition: all 500ms linear;
-}
-
-.show {
-  display: block;
-}
-
-.visuallyhidden {
-  opacity: 0;
-}
-
-

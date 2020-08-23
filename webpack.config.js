@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWepackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 
 module.exports = {
@@ -20,7 +21,12 @@ module.exports = {
         template: "./src/index.html",
         filename: "./index.html"
         }),
-        new CleanWebpackPlugin()
+
+        new CleanWebpackPlugin(),
+        new MiniCssExtractPlugin({
+            filename: "[name].css",
+        }),
+        require('autoprefixer')
     ],
     module: {
         rules: [
@@ -36,20 +42,7 @@ module.exports = {
             },
             {
                 test: /\.(scss|css)$/,
-                // use: [ 'style-loader', 'css-loader', "postcss-loader" , 'sass-loader' ]
-                use: [
-                    'style-loader',
-                    'css-loader',
-                    {
-                        loader: "postcss-loader",
-                        options: {
-                            plugins: () => [
-                                require("autoprefixer")()
-                            ],
-                        },
-                    },
-                    'sass-loader',
-                ]
+                use: [ 'style-loader', MiniCssExtractPlugin.loader, 'css-loader', "postcss-loader" , 'sass-loader' ]
             },
             {
                 test: /\.html$/,

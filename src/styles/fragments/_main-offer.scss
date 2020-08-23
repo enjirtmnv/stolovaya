@@ -1,5 +1,5 @@
 .main-offer {
-  margin: 0 0 21px 0;
+  padding: 21px 0 0 0;
   &__wrap {
     width: 100%;
     height: 476px;
@@ -37,16 +37,20 @@
       border-bottom: none;
     }
 
-    &__link:hover span {
-      color: #faad3d;
-    }
-
     &__link {
       display: flex;
       justify-content: space-between;
       align-items: center;
       font-size: 16px;
       line-height: 44px;
+    }
+
+    &__link span {
+      transition: 200ms;
+    }
+
+    &__link:hover span {
+      color: #faad3d;
     }
 
     &__name {
