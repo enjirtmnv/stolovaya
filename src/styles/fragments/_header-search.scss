@@ -132,6 +132,10 @@
         span {
           color: #fff;
         }
+        .search-cart__count {
+          background-image: url("../img/icons/shopping-cart-hover.png");
+          transition: 300ms;
+        }
       }
 
       &__left {
