@@ -904,6 +904,7 @@ ul, li {
 .main-offer .carousel {
   overflow: hidden;
   width: 58%;
+  height: 476px;
 }
 @media screen and (max-width: 1600px) {
   .main-offer .carousel {
