@@ -1,23 +1,39 @@
 .main-offer {
   padding: 21px 0 0 0;
+  @media screen and (max-width: $inner-body-laptop) {
+    padding: 0;
+  }
   &__wrap {
     width: 100%;
     height: 476px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media screen and (max-width: $inner-body-laptop) {
+      flex-direction: column;
+      align-items: center;
+      height: 1062px;
+    }
   }
 
   .targeted-offers {
     width: 20%;
     background-color: #ffffff;
-
+    @media screen and (max-width: $inner-body-laptop-L) {
+      width: 23%;
+    }
+    @media screen and (max-width: $inner-body-laptop-XXXS) {
+      width: 30%;
+    }
     &__title {
       display: block;
       color: #faad3d;
       font-size: 24px;
       font-family: 'MyriadPro', serif;
       padding: 33px 0 10px 28px;
+      @media screen and (max-width: $inner-body-laptop-XS) {
+        font-size: 21px;
+      }
     }
 
     &__nav {
@@ -25,7 +41,6 @@
     }
 
     &__list {
-      font-size: 16px;
     }
 
     &__item {
@@ -43,6 +58,9 @@
       align-items: center;
       font-size: 16px;
       line-height: 44px;
+      @media screen and (max-width: $inner-body-laptop-XXS) {
+        font-size: 13px;
+      }
     }
 
     &__link span {
@@ -58,34 +76,66 @@
     }
 
     &__arrow {
+      font-size: 16px;
       color: #cecece;
+    }
+    @media screen and (max-width: $inner-body-laptop) {
+      display: none;
     }
   }
 
   .carousel {
     overflow: hidden;
     width: 58%;
-
+    @media screen and (max-width: $inner-body-laptop-L) {
+      width: 52%;
+    }
+    @media screen and (max-width: $inner-body-laptop-XXXS) {
+      width: 67%;
+    }
+    @media screen and (max-width: $inner-body-laptop) {
+      width: 100%;
+      height: 556px;
+    }
     .swiper-wrapper {
       width: 100%;
     }
 
     .swiper-slide {
+      position: relative;
       background-color: #282828;
       background-image: url("../img/carousel/carousel.png");
       background-repeat: no-repeat;
       background-position: 85% 60%;
       width: 100%;
       height: 476px;
+      @media screen and (max-width: $inner-body-laptop) {
+        height: 556px;
+      }
+      @media screen and (max-width: $inner-body-tablet) {
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color: rgba(0,0,0,0.4);
+        }
+      }
     }
 
     &__content {
+      position: relative;
       height: 100%;
       padding: 59px 0 0 68px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      max-width: 60%;
+      width: 60%;
+      @media screen and (max-width: $inner-body-laptop-L) {
+        width: 70%;
+      }
     }
 
     &__name {
@@ -94,6 +144,15 @@
       font-family: 'MyriadProExt-LightSemiExt', serif;
       line-height: 20px;
       display: block;
+      @media screen and (max-width: $inner-body-laptop) {
+        font-size: 25px;
+        line-height: 33px;
+      }
+      @media screen and (max-width: $inner-body-tablet) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
     }
 
     &__title {
@@ -103,6 +162,18 @@
       line-height: 42px;
       margin: 70px 0 21px 0;
       display: block;
+      @media screen and (max-width: $inner-body-laptop-S) {
+        font-size: 30px;
+        line-height: 32px;
+      }
+      @media screen and (max-width: $inner-body-laptop) {
+        font-size: 40px;
+        line-height: 42px;
+      }
+      @media screen and (max-width: $inner-body-tablet) {
+        font-size: 30px;
+        line-height: 32px;
+      }
     }
 
     &__subtitle {
@@ -112,6 +183,14 @@
       line-height: 20px;
       margin: 0 0 66px 0;
       display: block;
+      @media screen and (max-width: $inner-body-laptop) {
+        font-size: 25px;
+        line-height: 33px;
+      }
+      @media screen and (max-width: $inner-body-tablet) {
+        font-size: 18px;
+        line-height: 20px;
+      }
     }
 
     &__button {
@@ -122,12 +201,20 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @media screen and (max-width: $inner-body-laptop) {
+        width: 213px;
+        height: 53px;
+        border-radius: 26.5px;;
+      }
     }
 
     &__text-more {
       font-size: 18px;
       color: #ffffff;
       font-family: 'MyriadPro', serif;
+      @media screen and (max-width: $inner-body-laptop) {
+        font-size: 30px;
+      }
 
     }
 
@@ -176,6 +263,17 @@
     border: 2px solid #faad3d;
     display: flex;
     align-items: flex-end;
+    @media screen and (max-width: $inner-body-laptop-L) {
+      width: 23%;
+    }
+    @media screen and (max-width: $inner-body-laptop-XXXS) {
+      display: none;
+    }
+    @media screen and (max-width: $inner-body-laptop) {
+      display: flex;
+      height: 476px;
+      width: 90%;
+    }
 
     &__wrap {
       display: flex;
@@ -185,9 +283,11 @@
 
     &__giftbox {
       width: 70px;
-
       img {
         max-width: 100%;
+      }
+      @media screen and (max-width: $inner-body-laptop) {
+        width: 118px;
       }
     }
 
@@ -198,6 +298,18 @@
       color: #121212;
       margin: 8px 0 0 0;
       display: block;
+      @media screen and (max-width: $inner-body-laptop-S) {
+        font-size: 15px;
+        line-height: 30px;
+      }
+      @media screen and (max-width: $inner-body-laptop) {
+        font-size: 25px;
+        line-height: 30px;
+      }
+      @media screen and (max-width: $inner-body-tablet) {
+        font-size: 18px;
+        line-height: 30px;
+      }
     }
 
     &__title {
@@ -206,6 +318,17 @@
       line-height: 40px;
       color: #121212;
       display: block;
+      @media screen and (max-width: $inner-body-laptop-S) {
+        font-size: 30px;
+      }
+      @media screen and (max-width: $inner-body-laptop) {
+        font-size: 50px;
+        line-height: 55px;
+      }
+      @media screen and (max-width: $inner-body-tablet) {
+        font-size: 40px;
+        line-height: 40px;
+      }
     }
 
     &__catalog-link {
@@ -213,9 +336,19 @@
       font-family: 'MyriadProExt-LightSemiExt', serif;
       line-height: 24px;
       margin: 13px 0 0 0;
-
       span {
         color: #ffaf2d;
+      }
+      @media screen and (max-width: $inner-body-laptop-S) {
+        font-size: 15px;
+      }
+      @media screen and (max-width: $inner-body-laptop) {
+        font-size: 30px;
+        line-height: 55px;
+      }
+      @media screen and (max-width: $inner-body-tablet) {
+        font-size: 18px;
+        line-height: 24px;
       }
     }
   }

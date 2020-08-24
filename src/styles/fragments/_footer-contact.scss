@@ -6,25 +6,61 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 93px 0 0 0;
+    @media screen and (max-width: $inner-body-laptop) {
+      flex-direction: column;
+      height: 100%;
+      padding: 40px 0;
+    }
   }
   &__item-wrap{
     flex-basis: 14%;
+    @media screen and (max-width: $inner-body-laptop) {
+      flex-basis: auto;
+    }
   }
   &__info-name{
-    color: #777777;
     font-family: 'MyriadProExt-LightSemiExt', serif;
     font-size: 24px;
     line-height: 24px;
     font-weight: 300;
     margin: 0 0 20px 0;
     display: block;
+    position: relative;
+    span{
+      color: #777777;
+    }
+    @media screen and (max-width: $inner-body-laptop) {
+      font-size: 30px;
+      line-height: 94px;
+      height: 94px;
+      border-bottom: solid 1px #555555;
+      margin: 0;
+      span{
+        color: #ffffff;
+      }
+      &::before{
+        position: absolute;
+        content: "+";
+        right: 0;
+        color: #ffffff;
+      }
+    }
+    @media screen and (max-width: $inner-body-tablet) {
+      font-size: 20px;
+      line-height: 74px;
+      height: 71px;
+    }
   }
+
   &__info-list{
     color: #ffffff;
     font-family: 'MyriadProExt-LightSemiExt', serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
+    @media screen and (max-width: $inner-body-laptop) {
+      display: none;
+    }
   }
   &__contacts ul{
     li:nth-child(3){
@@ -36,5 +72,8 @@
     li:nth-child(7){
       margin-bottom: 15px;
     }
+  }
+  &__contacts a{
+    border-bottom: none;
   }
 }

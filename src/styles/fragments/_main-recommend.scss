@@ -1,5 +1,8 @@
 .main-recommend {
-  margin: 0 0 171px 0;
+  padding: 0 0 171px 0;
+  @media screen and (max-width: $inner-body-laptop) {
+    padding: 0 0 155px 0;
+  }
 
   .recommend {
     width: 100%;
@@ -12,15 +15,28 @@
       color: #232323;
       font-size: 40px;
       display: block;
+      @media screen and (max-width: $inner-body-laptop) {
+        font-size: 50px;
+      }
+      @media screen and (max-width: $inner-body-tablet) {
+        font-size: 40px;
+      }
     }
 
     &__par {
       font-family: 'MyriadProExt-LightSemiExt', serif;
       color: #787878;
       font-size: 16px;
-      width: 685px;
+      width: 50%;
       margin: 11px 0 57px 0;
       text-align: center;
+      @media screen and (max-width: $inner-body-laptop) {
+        font-size: 30px;
+      }
+      @media screen and (max-width: $inner-body-tablet) {
+        font-size: 16px;
+        width: 100%;
+      }
     }
 
     &__wrap {
@@ -28,11 +44,17 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      @media screen and (max-width: $inner-body-laptop) {
+        flex-direction: column;
+      }
     }
 
     .recommend-main {
       width: 43%;
       margin: 0 12.3px 0 0;
+      @media screen and (max-width: $inner-body-laptop) {
+        width: 100%;
+      }
       &__wrap {
         height: 745px;
         background-color: #ffffff;
@@ -43,6 +65,22 @@
         background-repeat: no-repeat;
         background-size: 68%;
         background-position: center 270px;
+        @media screen and (max-width: $inner-body-laptop) {
+          height: 483px;
+          align-items: flex-start;
+          justify-content: center;
+          padding: 0 0 0 63px;
+          background-position: 520px center ;
+          background-size: 28%;
+        }
+        @media screen and (max-width: $inner-body-tablet) {
+          padding: 0 0 0 20px;
+        }
+        @media screen and (max-width: $inner-body-tablet) {
+          height: 383px;
+          background-position: right center;
+          background-size: 28%;
+        }
       }
 
       &__model {
@@ -52,6 +90,13 @@
         text-transform: uppercase;
         margin: 69px 0 0 0;
         display: block;
+        @media screen and (max-width: $inner-body-laptop) {
+          margin: 0;
+          font-size: 30px;
+        }
+        @media screen and (max-width: $inner-body-tablet) {
+          font-size: 20px;
+        }
       }
 
       &__title {
@@ -60,6 +105,13 @@
         font-size: 30px;
         margin: 6px 0 19px 0;
         display: block;
+        @media screen and (max-width: $inner-body-laptop) {
+          font-size: 40px;
+        }
+        @media screen and (max-width: $inner-body-tablet) {
+          font-size: 30px;
+
+        }
       }
 
       &__par {
@@ -68,24 +120,53 @@
         font-size: 16px;
         width: 284px;
         text-align: center;
+        @media screen and (max-width: $inner-body-laptop) {
+          text-align: left;
+          font-size: 25px;
+          width: 60%;
+        }
+        @media screen and (max-width: $inner-body-tablet) {
+          font-size: 16px;
+        }
       }
     }
 
     .recommend-side {
       width: 56%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @media screen and (max-width: $inner-body-laptop) {
+        width: 100%;
+      }
       .recommend-side-1 {
+        background-image: url("../img/recommend/recommend-side-1.png");
+        background-repeat: no-repeat;
+        background-size: 44%;
+        background-position: -180px center;
+        background-color: #232323;
+        height: 420px;
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width: $inner-body-laptop-S) {
+          background-position: -140px center;
+        }
+        @media screen and (max-width: $inner-body-laptop-XXS) {
+          background-position: -100px center;
+        }
+        @media screen and (max-width: $inner-body-laptop) {
+          height: 483px;
+          padding: 0 30px 0 0;
+        }
+        @media screen and (max-width: $inner-body-tablet) {
+          height: 383px;
+          background-position: -70px center;
+        }
         &__wrap {
-          height: 420px;
-          background-color: #232323;
-          margin: 0 0 9px 0;
           display: flex;
           flex-direction: column;
           justify-content: center;
-          padding: 0 0 0 247px;
-          background-image: url("../img/recommend/recommend-side-1.png");
-          background-repeat: no-repeat;
-          background-size: 44%;
-          background-position: -180px center;
+          align-items: flex-end;
         }
 
         &__model {
@@ -94,6 +175,13 @@
           font-size: 20px;
           text-transform: uppercase;
           display: block;
+          @media screen and (max-width: $inner-body-laptop) {
+            font-size: 30px;
+            width: 60%;
+          }
+          @media screen and (max-width: $inner-body-tablet) {
+            font-size: 20px;
+          }
         }
 
         &__title {
@@ -101,7 +189,13 @@
           color: #ffffff;
           font-size: 30px;
           margin: 6px 0 19px 0;
-          display: block;
+          @media screen and (max-width: $inner-body-laptop) {
+            font-size: 40px;
+            width: 60%;
+          }
+          @media screen and (max-width: $inner-body-tablet) {
+            font-size: 30px;
+          }
         }
 
         &__par {
@@ -109,21 +203,48 @@
           color: #777777;
           font-size: 16px;
           width: 394px;
+          @media screen and (max-width: $inner-body-laptop) {
+            font-size: 25px;
+            width: 60%;
+          }
+          @media screen and (max-width: $inner-body-tablet) {
+            font-size: 16px;
+          }
         }
       }
 
       .recommend-side-2 {
+        background-image: url("../img/recommend/recommend-side-2.png");
+        background-repeat: no-repeat;
+        background-size: 51%;
+        background-position: 475px 10px;
+        background-color: #ffffff;
+        height: 316px;
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 0 0 63px;
+        @media screen and (max-width: $inner-body-laptop-S) {
+          background-position: 435px center;
+        }
+        @media screen and (max-width: $inner-body-laptop-XXS) {
+          background-position: 375px center;
+        }
+        @media screen and (max-width: $inner-body-laptop) {
+          height: 483px;
+          background-position: 475px center;
+        }
+        @media screen and (max-width: $inner-body-tablet) {
+          height: 383px;
+          padding: 0 0 0 20px;
+          background-position: 350px center;
+        }
+        @media screen and (max-width: $inner-body-tablet-M) {
+          background-position: 250px center;
+        }
         &__wrap {
-          background-color: #ffffff;
-          height: 316px;
           display: flex;
           flex-direction: column;
           justify-content: center;
-          padding: 0 0 0 62.8px;
-          background-image: url("../img/recommend/recommend-side-2.png");
-          background-repeat: no-repeat;
-          background-size: 51%;
-          background-position: 475px 10px;
         }
 
         &__model {
@@ -131,6 +252,12 @@
           color: #121212;
           font-size: 20px;
           text-transform: uppercase;
+          @media screen and (max-width: $inner-body-laptop) {
+            font-size: 30px;
+          }
+          @media screen and (max-width: $inner-body-tablet) {
+            font-size: 20px;
+          }
         }
 
         &__title {
@@ -138,6 +265,12 @@
           color: #121212;
           font-size: 30px;
           margin: 6px 0 19px 0;
+          @media screen and (max-width: $inner-body-laptop) {
+            font-size: 40px;
+          }
+          @media screen and (max-width: $inner-body-tablet) {
+            font-size: 30px;
+          }
         }
 
         &__par {
@@ -145,6 +278,13 @@
           color: #777777;
           font-size: 16px;
           width: 395px;
+          @media screen and (max-width: $inner-body-laptop) {
+            font-size: 25px;
+            width: 60%;
+          }
+          @media screen and (max-width: $inner-body-tablet) {
+            font-size: 16px;
+          }
         }
       }
     }

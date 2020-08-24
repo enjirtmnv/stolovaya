@@ -1,14 +1,21 @@
 .header-categories {
   background-color: #ffffff;
+  @media screen and (max-width: $inner-body-laptop) {
+    background-color: #f1f1f1;
+    border-right: solid 2px #e2e2e2;
+    border-bottom: solid 2px #e2e2e2;
+    border-left: solid 2px #e2e2e2;
+  }
   .categories {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
+    @media screen and (max-width: $inner-body-laptop) {
+      display: none;
+    }
     &__wrapper {
+      height: 100px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
     }
 
     &__item-link {
@@ -20,7 +27,6 @@
 
     &__image {
       width: 57px;
-
       img {
         max-width: 100%;
       }
@@ -30,6 +36,54 @@
       font-size: 16px;
       color: #343434;
       font-family: 'MyriadPro', serif;
+      display: block;
+      @media screen and (max-width: $inner-body-laptop-S) {
+        font-size: 13px;
+      }
+      @media screen and (max-width: $inner-body-laptop-XXXS) {
+        font-size: 11px;
+      }
+    }
+  }
+  .categories-mobile{
+    display: none;
+    &__wrapper{
+      height: 83px;
+      line-height: 83px;
+    }
+
+    &__link {
+      font-family: 'MyriadProExt-LightSemiExt', serif;
+      font-size: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media screen and (max-width: $inner-body-tablet) {
+        font-size: 24px;
+      }
+      @media screen and (max-width: $inner-body-tablet) {
+        font-size: 20px;
+      }
+    }
+
+    &__link span {
+      transition: 200ms;
+    }
+
+    &__link:hover span {
+      color: #faad3d;
+    }
+
+    &__name {
+      color: #000000;
+    }
+
+    &__arrow {
+      font-size: 16px;
+      color: #777777;
+    }
+
+    @media screen and (max-width: $inner-body-laptop) {
       display: block;
     }
   }

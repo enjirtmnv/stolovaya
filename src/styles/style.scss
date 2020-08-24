@@ -1,6 +1,18 @@
 @import "../../node_modules/normalize.css/normalize.css";
 @import "./libs/fonts.css";
 @import "./libs/prefixes.css";
+$inner-body-laptop-L: 1600px;
+$inner-body-laptop-M: 1500px;
+$inner-body-laptop-S: 1400px;
+$inner-body-laptop-XS: 1300px;
+$inner-body-laptop-XXS: 1224px;
+$inner-body-laptop-XXXS: 1124px;
+$inner-body-laptop: 1024px;
+
+$inner-body-tablet: 768px;
+$inner-body-tablet-M: 636px;
+$inner-body-mobile-L: 425px;
+$inner-body-mobile-S: 320px;
 
 * {
   margin: 0;
@@ -29,20 +41,64 @@ ul, li {
 }
 
 .container {
-   width: 1547px;
+   max-width: 1547px;
    margin: 0 auto;
+  @media screen and (max-width: $inner-body-laptop-L) {
+    max-width: 1457px;
+  }
+  @media screen and (max-width: $inner-body-laptop-M) {
+    max-width: 1357px;
+  }
+  @media screen and (max-width: $inner-body-laptop-S) {
+    max-width: 1267px;
+  }
+  @media screen and (max-width: $inner-body-laptop-XS) {
+    max-width: 1187px;
+  }
+  @media screen and (max-width: $inner-body-laptop-XXS) {
+    max-width: 1087px;
+  }
+  @media screen and (max-width: $inner-body-laptop-XXXS) {
+    max-width: 977px;
+  }
+  @media screen and (max-width: $inner-body-laptop) {
+    max-width: 90%;
+  }
  }
 
 .container2 {
-  width: 1413px;
+  max-width: 1413px;
   margin: 0 auto;
+  @media screen and (max-width: $inner-body-laptop-L) {
+    max-width: 1323px;
+  }
+  @media screen and (max-width: $inner-body-laptop-M) {
+    max-width: 1257px;
+  }
+  @media screen and (max-width: $inner-body-laptop-S) {
+    max-width: 1177px;
+  }
+  @media screen and (max-width: $inner-body-laptop-XS) {
+    max-width: 1107px;
+  }
+  @media screen and (max-width: $inner-body-laptop-XXS) {
+    max-width: 1007px;
+  }
+  @media screen and (max-width: $inner-body-laptop-XXXS) {
+    max-width: 897px;
+  }
+  @media screen and (max-width: $inner-body-laptop) {
+    max-width: 80%;
+  }
 }
 
 .header{
   position: relative;
   z-index: 15;
   box-shadow: 7px 7px 18px rgba(0, 0, 0, 0.1);
-  //background-color: #f4f2f2;
+  @media screen and (max-width: $inner-body-laptop) {
+    box-shadow: none;
+  }
 }
 
 @import "./fragments/header-nav.scss";

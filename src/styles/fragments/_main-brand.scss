@@ -1,11 +1,20 @@
 .main-brand {
-  margin: 0 0 174px 0;
+  margin: 20px 0 174px 0;
   .brand {
+    @media screen and (max-width: $inner-body-laptop) {
+      display: flex;
+      justify-content: center;
+    }
     &__wrap {
       background-color: #fff;
       width: 100%;
       min-height: 101px;
       padding: 15px 0;
+      @media screen and (max-width: $inner-body-laptop) {
+        width: 90%;
+        padding: 0;
+      }
+
     }
 
     &__list {
@@ -14,10 +23,12 @@
       justify-content: space-evenly;
       margin: 0;
       padding: 0;
+      @media screen and (max-width: $inner-body-laptop) {
+        flex-wrap: wrap;
+      }
     }
 
     &__item {
-      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -26,10 +37,49 @@
       color: #232323;
       font-size: 18px;
       font-family: 'MyriadPro', serif;
+      padding: 0 15px;
+      &:last-child {
+        border-right: none;
+      }
+      img{
+        max-width: 100%;
+      }
+      @media screen and (max-width: $inner-body-laptop) {
+        padding: 0 20px;
+        height: 169px;
+        flex-basis: 50%;
+        border-right: none;
+        border-bottom: 2px solid #e8e7e7;
+        &:nth-child(odd) a{
+          border-right: 2px solid #e8e7e7;
+          padding-right: 20px;
+        }
+        &:nth-child(odd){
+          padding-right: 0;
+        }
+        &:nth-child(5) {
+          border-bottom: none;
+        }
+        &:nth-child(6) {
+          border-bottom: none;
+        }
+        img{
+          width: 225px;
+        }
+      }
     }
 
-    &__item:last-child {
-      border: none;
+    &__item-link{
+      @media screen and (max-width: $inner-body-laptop) {
+        height: 119px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+      }
     }
+
+
   }
 }

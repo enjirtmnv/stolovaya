@@ -5,11 +5,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media screen and (max-width: $inner-body-laptop) {
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 244px;
+    }
   }
   &__logo-wrap{
     display: flex;
     flex-direction: row;
     padding: 46px 0 0 0;
+    @media screen and (max-width: $inner-body-laptop) {
+      padding: 42px 0 0 0;
+    }
   }
   &__logo{
     width: 40px;
@@ -27,12 +35,24 @@
     color: #ffffff;
     font-size: 24px;
     text-transform: capitalize;
+    @media screen and (max-width: $inner-body-laptop) {
+      font-size: 50px;
+    }
+    @media screen and (max-width: $inner-body-tablet) {
+      font-size: 24px;
+    }
   }
   .logo-name2{
     font-family: 'MyriadPro', serif;
     color: #ffffff;
     font-size: 24px;
     text-transform: uppercase;
+    @media screen and (max-width: $inner-body-laptop) {
+      font-size: 50px;
+    }
+    @media screen and (max-width: $inner-body-tablet) {
+      font-size: 24px;
+    }
   }
   &__logo-text{
     font-family: 'MyriadProExt-LightSemiExt', serif;
@@ -40,11 +60,24 @@
     color: #787878;
     line-height: 18px;
     display: block;
+    @media screen and (max-width: $inner-body-laptop) {
+      font-size: 30px;
+    }
+    @media screen and (max-width: $inner-body-tablet) {
+      font-size: 16px;
+    }
   }
   &__text{
     font-size: 18px;
     font-family: 'MyriadProExt-LightSemiExt', serif;
     color: #ffffff;
     padding: 40px 0 0 0;
+    @media screen and (max-width: $inner-body-laptop) {
+      margin: 42px 0 0 0;
+      font-size: 40px;
+    }
+    @media screen and (max-width: $inner-body-tablet) {
+      font-size: 18px;
+    }
   }
 }

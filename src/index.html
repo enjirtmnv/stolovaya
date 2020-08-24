@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!--    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Stolovaya</title>
 </head>
@@ -29,13 +29,13 @@
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#" class="nav__link">Сервис</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
-                    <li class="nav__item nav__item_icon-mail">
+                    <li class="nav__item">
                         <a href="#" class="nav__link">
-                            <img src="./img/icons/email-icon.png" alt="email-icon"><span>info@stolovay.ru</span>
+                            <img src="./img/icons/email-icon.png" alt="email-icon"><span class="nav__email-text">info@stolovay.ru</span>
                         </a></li>
-                    <li class="nav__item nav__item_icon-phone">
+                    <li class="nav__item">
                         <a href="#" class="nav__link">
-                            <img src="./img/icons/telephone-icon.png" alt="telephone-icon"><span>8 495 790-72-05</span>
+                            <img src="./img/icons/telephone-icon.png" alt="telephone-icon"><span class="nav__phone-number">8 495 790-72-05</span>
                         </a></li>
                 </ul>
             </nav>
@@ -45,6 +45,22 @@
     <div class="header-search">
         <div class="container">
             <div class="search">
+
+                <div class="mobile-menu">
+
+                    <a href="#"><div class="mobile-menu__burger"><span></span></div></a>
+                    <a href="#"><div class="mobile-menu__logo-wrap">
+                        <img class="mobile-menu__logo" src="./img/icons/logo.png" alt="logo">
+                        <div class="mobile-menu__logo-name">
+                            <div class="logo-name-wrap">
+                                <span class="logo-name1">столовая.</span><span class="logo-name2">ру</span>
+                            </div>
+                            <span class="mobile-menu__logo-text">Создание пищеблоков</span>
+                        </div>
+                    </div>
+                </a>
+                </div>
+
                 <a class="search__logo" href="#"><img src="./img/icons/logo-header.png" alt="logo"></a>
                 <form class="search-form" action="" method="get" type="search-form">
                     <div class="search-form__categories">
@@ -69,10 +85,19 @@
                     </a>
                 </div>
 
+                <div class="mobile-nav">
+                    <a class="mobile-nav__search-icon" href=""><img src="./img-mobile/search-icon-mobile.png" alt="search-icon"></a>
+                    <a class="mobile-nav__telephone-icon" href=""><img src="./img-mobile/telephone-icon-mobile.png" alt="telephone-icon"></a>
+                    <a class="mobile-nav__cart-img" href="">
+                        <span class="mobile-nav__cart-text">12</span>
+                        <img src="./img-mobile/shopping-cart-mobile.png" alt="shopping-cart"></a>
+                </div>
+
 
                 <a href="#" class="search-cart">
                     <div class="search-cart__left">
                         <span class="search-cart__count">12</span>
+
                     </div>
                     <div class="search-cart__right">
                         <span class="search-cart__text">Сумма</span>
@@ -85,8 +110,20 @@
     </div>
 
     <div class="header-categories">
+        <div class="categories-mobile">
+            <div class="container">
+                <div class="categories-mobile__wrapper">
+                        <a class="categories-mobile__link" href="#">
+                            <span class="categories-mobile__name">Оборудование</span>
+                            <span class="categories-mobile__arrow">></span>
+                        </a>
+                </div>
+        </div>
+        </div>
+
         <div class="categories">
             <div class="container">
+
                 <div class="categories__wrapper">
                     <div class="categories__item">
                         <a class="categories__item-link" href="#">
@@ -181,7 +218,6 @@
             </div>
         </div>
     </div>
-
 
 </header>
 
@@ -343,7 +379,6 @@
     </div>
 </div>
 
-
 <main class="main">
     <div class="shadow shadow-main"></div>
 
@@ -482,17 +517,17 @@
             <div class="brand">
                 <div class="brand__wrap">
                     <ul class="brand__list">
-                        <li class="brand__item"><a href="#"><img src="./img/brands/brand-1.png" alt="brand-logo"></a>
+                        <li class="brand__item"><a class="brand__item-link" href="#"><img src="./img/brands/brand-1.png" alt="brand-logo"></a>
                         </li>
-                        <li class="brand__item"><a href="#"><img src="./img/brands/brand-2.png" alt="brand-logo"></a>
+                        <li class="brand__item"><a class="brand__item-link" href="#"><img src="./img/brands/brand-2.png" alt="brand-logo"></a>
                         </li>
-                        <li class="brand__item"><a href="#"><img src="./img/brands/brand-3.png" alt="brand-logo"></a>
+                        <li class="brand__item"><a class="brand__item-link" href="#"><img src="./img/brands/brand-3.png" alt="brand-logo"></a>
                         </li>
-                        <li class="brand__item"><a href="#"><img src="./img/brands/brand-4.png" alt="brand-logo"></a>
+                        <li class="brand__item"><a class="brand__item-link" href="#"><img src="./img/brands/brand-4.png" alt="brand-logo"></a>
                         </li>
-                        <li class="brand__item"><a href="#"><img src="./img/brands/brand-5.png" alt="brand-logo"></a>
+                        <li class="brand__item"><a class="brand__item-link" href="#"><img src="./img/brands/brand-5.png" alt="brand-logo"></a>
                         </li>
-                        <li class="brand__item"><a href="#">Все бренды</a></li>
+                        <li class="brand__item"><a class="brand__item-link" href="#">Все бренды</a></li>
                     </ul>
                 </div>
             </div>
@@ -585,16 +620,21 @@
                         </div>
                     </a>
                     <div class="recommend-side">
-                        <a class="recommend-side-1" href="#">
-                            <div class="recommend-side-1__wrap">
+                        <a class="recommend-side-1-link" href="#">
+                        <div class="recommend-side-1" >
+
+                            <div class="recommend-side-1__wrap" >
                                 <span class="recommend-side-1__model">abat</span>
                                 <span class="recommend-side-1__title">Тепловое оборудование</span>
                                 <p class="recommend-side-1__par">Более 55 лет успешно работает на рынке
                                     торгово-технологического оборудования, по праву занимая лидирующее положение в
                                     данном сегменте.</p>
                             </div>
+
+                        </div>
                         </a>
-                        <a class="recommend-side-2" href="#">
+                        <a class="recommend-side-2-link" href="#">
+                        <div class="recommend-side-2">
                             <div class="recommend-side-2__wrap">
                                 <span class="recommend-side-2__model">hicold</span>
                                 <span class="recommend-side-2__title">Холодильные столы</span>
@@ -602,6 +642,7 @@
                                     оптимизировать пространство на кухне, сделать работу персонала максимально удобной и
                                     эффективной.</p>
                             </div>
+                        </div>
                         </a>
                     </div>
                 </div>
@@ -701,7 +742,7 @@
         <div class="container2">
             <div class="footer-contact__wrap">
                 <div class="footer-contact__info footer-contact__item-wrap">
-                    <span class="footer-contact__info-name">Информация</span>
+                    <a class="footer-contact__info-name" href="#"><span>Информация</span></a>
                     <ul class="footer-contact__info-list">
                         <li><a href="#">Компания</a></li>
                         <li><a href="#">Портфолио</a></li>
@@ -716,7 +757,7 @@
                     </ul>
                 </div>
                 <div class="footer-contact__equipment footer-contact__item-wrap">
-                    <span class="footer-contact__info-name">Оборудование</span>
+                    <a class="footer-contact__info-name" href="#"><span>Оборудование</span></a>
                     <ul class="footer-contact__info-list">
                         <li><a href="#">Тепловое</a></li>
                         <li><a href="#">Холодильное</a></li>
@@ -732,7 +773,7 @@
                     </ul>
                 </div>
                 <div class="footer-contact__offers footer-contact__item-wrap">
-                    <span class="footer-contact__info-name">Предложения</span>
+                    <a class="footer-contact__info-name" href="#"><span>Предложения</span></a>
                     <ul class="footer-contact__info-list">
                         <li><a href="#">Кафе, барам, ресторанам</a></li>
                         <li><a href="#">Детским садам и школам</a></li>
@@ -745,7 +786,7 @@
                     </ul>
                 </div>
                 <div class="footer-contact__contacts footer-contact__item-wrap">
-                    <span class="footer-contact__info-name">Контакты</span>
+                    <a class="footer-contact__info-name" href="#"><span>Контакты</span></a>
                     <ul class="footer-contact__info-list">
                         <li><a href="tel:+7(495)150-31-71" target="_blank">8 495 150 31 71</a></li>
                         <li><a href="tel:+7(800)500-43-44" target="_blank">8 800 500 43 44</a></li>
